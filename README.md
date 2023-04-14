@@ -44,6 +44,50 @@ Streamlit是一个用于构建数据科学应用程序的Python框架，它允�
 - 发邮件到wanghanbin95@163.com
 
 ## 贡献者
-<!-- <a href="https://github.com/wanghanbinpanda">
-    <img src="https://avatars0.githubusercontent.com/u/15909210?s=460&v=4" width="45px">
-</a> -->
+<!-- readme: contributors -start -->
+<table>
+<tr>
+    <td align="center">
+        <a href="https://github.com/wanghanbinpanda">
+            <img src="https://avatars.githubusercontent.com/u/31166322?v=4" width="100;" alt="akhilmhdh"/>
+            <br />
+            <sub><b>Akhil Mohan</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/MrChocolatine">
+            <img src="https://avatars.githubusercontent.com/u/47531779?v=4" width="100;" alt="MrChocolatine"/>
+            <br />
+            <sub><b>Max Z</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/matks">
+            <img src="https://avatars.githubusercontent.com/u/3830050?v=4" width="100;" alt="matks"/>
+            <br />
+            <sub><b>Mathieu Ferment</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/athul">
+            <img src="https://avatars.githubusercontent.com/u/40897573?v=4" width="100;" alt="athul"/>
+            <br />
+            <sub><b>Athul Cyriac Ajay</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/jessebot">
+            <img src="https://avatars.githubusercontent.com/u/2389292?v=4" width="100;" alt="jessebot"/>
+            <br />
+            <sub><b>JesseBot</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/kachick">
+            <img src="https://avatars.githubusercontent.com/u/1180335?v=4" width="100;" alt="kachick"/>
+            <br />
+            <sub><b>Kenichi Kamiya</b></sub>
+        </a>
+    </td></tr>
+</table>
+<!-- readme: contributors -end -->
