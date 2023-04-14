@@ -35,5 +35,6 @@ Streamlit是一个用于构建数据科学应用程序的Python框架，它允�
 - 发邮件到wanghanbin95@163.com
 
 ## 贡献者
-<a href="https://github.com/wanghanbinpanda/Streamlit-Documentation-Chinese/graphs/contributors"><img src="https://opencollective.com/Streamlit-Documentation-Chinese
-/contributors.svg?width=890&button=false" /></a>
+<!-- <a href="https://github.com/wanghanbinpanda">
+    <img src="https://avatars0.githubusercontent.com/u/15909210?s=460&v=4" width="45px">
+</a> -->
