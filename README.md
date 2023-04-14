@@ -49,45 +49,18 @@ Streamlit是一个用于构建数据科学应用程序的Python框架，它允�
 <tr>
     <td align="center">
         <a href="https://github.com/wanghanbinpanda">
-            <img src="https://avatars.githubusercontent.com/u/31166322?v=4" width="100;" alt="akhilmhdh"/>
+            <img src="https://avatars.githubusercontent.com/u/110799172?v=4" width="100;" alt="Hanbin Wang"/>
             <br />
-            <sub><b>Akhil Mohan</b></sub>
+            <sub><b>Hanbin Wang</b></sub>
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/MrChocolatine">
-            <img src="https://avatars.githubusercontent.com/u/47531779?v=4" width="100;" alt="MrChocolatine"/>
+        <a href="https://github.com/xiningin">
+            <img src="https://avatars.githubusercontent.com/u/101446464?v=4" width="100;" alt="MrChocolatine"/>
             <br />
-            <sub><b>Max Z</b></sub>
+            <sub><b>Chengxing Zhou</b></sub>
         </a>
     </td>
-    <td align="center">
-        <a href="https://github.com/matks">
-            <img src="https://avatars.githubusercontent.com/u/3830050?v=4" width="100;" alt="matks"/>
-            <br />
-            <sub><b>Mathieu Ferment</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/athul">
-            <img src="https://avatars.githubusercontent.com/u/40897573?v=4" width="100;" alt="athul"/>
-            <br />
-            <sub><b>Athul Cyriac Ajay</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/jessebot">
-            <img src="https://avatars.githubusercontent.com/u/2389292?v=4" width="100;" alt="jessebot"/>
-            <br />
-            <sub><b>JesseBot</b></sub>
-        </a>
-    </td>
-    <td align="center">
-        <a href="https://github.com/kachick">
-            <img src="https://avatars.githubusercontent.com/u/1180335?v=4" width="100;" alt="kachick"/>
-            <br />
-            <sub><b>Kenichi Kamiya</b></sub>
-        </a>
-    </td></tr>
+</tr>
 </table>
 <!-- readme: contributors -end -->
