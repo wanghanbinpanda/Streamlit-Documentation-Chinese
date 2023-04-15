@@ -61,6 +61,20 @@ Streamlit是一个用于构建数据科学应用程序的Python框架，它允�
             <sub><b>Chengxing Zhou</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href="https://github.com/5SSjw">
+            <img src="https://avatars.githubusercontent.com/u/103640865?v=4" width="100;" alt="MrChocolatine"/>
+            <br />
+            <sub><b>Jingwei Song</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/LiuZhenxian123">
+            <img src="https://avatars.githubusercontent.com/u/74361989?v=4" width="100;" alt="MrChocolatine"/>
+            <br />
+            <sub><b>Zhenxian Liu</b></sub>
+        </a>
+    </td>
 </tr>
 </table>
 <!-- readme: contributors -end -->
