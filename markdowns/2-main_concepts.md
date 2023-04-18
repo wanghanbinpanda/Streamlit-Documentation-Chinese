@@ -139,7 +139,7 @@ st.dataframe(dataframe)
 
 *运行结果：* **点击列名可以进行排序等，双击表格元素可以修改数值**
 
-![运行结果](../2-main_concepts.assets/write_a_data_frame_2.png)
+![运行结果](../2-main_concepts.assets/write_a_data_frame_2.gif)
 让我们扩展第一个示例，使用Pandas ```Styler```对象突出显示交互表中的一些元素。
 
 *代码目录：streamlit/main_concepts/4_st_dataframe_pandas_styler.py*
@@ -158,7 +158,7 @@ st.dataframe(dataframe.style.highlight_max(axis=0))
 
 *运行结果：*
 
-![image-20230417172627408](../2-main_concepts.assets/write_a_data_frame_3.png)
+![image-20230417172627408](../2-main_concepts.assets/write_a_data_frame_3.gif)
 
 Streamlit还有一个用于生成静态表的方法：st.table()。
 
