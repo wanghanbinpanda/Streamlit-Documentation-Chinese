@@ -370,7 +370,7 @@ progress_bar.empty()
 st.button("Re-run")
 ```
 
-![image](https://note.youdao.com/yws/api/personal/file/WEBb84b7d747390e712a5488718f6195f3c?method=download&shareKey=a04b64f0c774459d90e868989f053947)
+![image](../5-create_a_multipage_app.assets/plotting_demo.gif)
 
 ### **pages/2_🌍_Mapping_Demo.py**
 
@@ -473,7 +473,7 @@ except URLError as e:
     )
 ```
 
-![image](https://note.youdao.com/yws/api/personal/file/WEB4ddb8a61dfac6e12e80ab1c5efedeb6b?method=download&shareKey=13163c9ec7dedb6dafbddb52400bf667)
+![image](../5-create_a_multipage_app.assets/map_demo.gif)
 
 ### **pages/3_📊_DataFrame_Demo.py**
 
@@ -536,7 +536,7 @@ except URLError as e:
     )
 ```
 
-![image](https://note.youdao.com/yws/api/personal/file/WEBfd314c53712ac0e546c3e9131272eb40?method=download&shareKey=eecd775bef6b2a40479935c6c005149b)
+![image](../5-create_a_multipage_app.assets/dataFrame_demo.gif)
 
 创建了额外的页面后，我们现在可以在下面的最后一步中将它们组合在一起。
 
