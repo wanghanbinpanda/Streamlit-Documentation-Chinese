@@ -1,4 +1,4 @@
-# This file is .....
+# This file is used to create an app
 # Author: Hanbin Wang
 # Date: 2023/4/18
 import streamlit as st
