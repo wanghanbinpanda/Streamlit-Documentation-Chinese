@@ -316,7 +316,7 @@ st.markdown(
 
 我们将我们的入口文件重命名为`Hello.py`，这样侧边栏的标题就大写了，而且只包括介绍页面的代码。此外，我们能够自定义页面标题和图标——就像它在浏览器标签中显示的那样，使用`st.set_page_config`。我们可以为我每个页面都这样做!
 
-![image](https://note.youdao.com/yws/api/personal/file/WEB0f1b4b577b91b026b17c17cba012b314?method=download&shareKey=a5a95926fd805c3d394d7750e3edfc17)
+![image](../5-create_a_multipage_app.assets/entrypoint.png)
 
 注意侧边栏不包含页面标签，因为我们还没有创建任何页面。
 
