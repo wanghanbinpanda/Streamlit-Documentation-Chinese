@@ -287,7 +287,7 @@ filtered_data = data[data[DATE_COLUMN].dt.hour == hour_to_filter]
 st.subheader('Map of all pickups at %s:00' % hour_to_filter)
 st.map(filtered_data)
 ```
-![运行结果](../2-main_concepts.assets/checkboxes.gif)
+![运行结果](../3-create_an_app.assets/create_a_app.gif)
 
 ## 分享你的应用
 
