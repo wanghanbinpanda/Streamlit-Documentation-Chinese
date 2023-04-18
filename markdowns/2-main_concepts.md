@@ -71,11 +71,18 @@ Streamlit的架构允许你像编写普通的Python脚本一样编写各种应�
 ```python
 """
 # My first app
-Here's our first attempt at using data to create a table:
 """
-
 import streamlit as st
 import pandas as pd
+st.write("Here's our first attempt at using data to create a table:")
+st.write(pd.DataFrame({
+    'first column': [1, 2, 3, 4],
+    'second column': [10, 20, 30, 40]
+}))
+"""
+Above is our first attempt at using data to create a table:
+"""
+
 df = pd.DataFrame({
   'first column': [1, 2, 3, 4],
   'second column': [10, 20, 30, 40]
@@ -86,7 +93,7 @@ df
 
 *运行结果：*
 
-![image-20230417164125296](2-Main concepts.assets/image-20230417164125296.png)
+![运行结果](2-main-concepts.assets/use_magic.png)
 
 ### 写入数据帧
 
@@ -107,7 +114,7 @@ st.write(pd.DataFrame({
 
 *运行结果：*
 
-![image-20230417164459085](2-Main concepts.assets/image-20230417164459085.png)
+![运行结果](2-main-concepts.assets/write_a_data_frame.png)
 还有其他用于显示特定格式数据的函数，如[st.dataframe()](https://docs.streamlit.io/library/api-reference/data/st.dataframe)和[st.table()](https://docs.streamlit.io/library/api-reference/data/st.table)，也可以用于显示数据。接下来让我们一起了解何时使用这些特性，以及如何向dataframes添加颜色和样式。
 
 您可能会问自己，“为什么我不总是使用```st.write()```呢?”原因如下:
@@ -133,7 +140,7 @@ st.dataframe(dataframe)
 
 *运行结果：* **点击列名可以进行排序等，双击表格元素可以修改数值**
 
-![image-20230417170314985](2-Main concepts.assets/image-20230417170314985.png)
+![运行结果](2-main-concepts.assets/write_a_data_frame_2.png)
 让我们扩展第一个示例，使用Pandas ```Styler```对象突出显示交互表中的一些元素。
 
 *代码目录：streamlit/main_concepts/4_st_dataframe_pandas_styler.py*
@@ -152,7 +159,7 @@ st.dataframe(dataframe.style.highlight_max(axis=0))
 
 *运行结果：*
 
-![image-20230417172627408](2-Main concepts.assets/image-20230417172627408.png)
+![image-20230417172627408](2-main-concepts.assets/write_a_data_frame_3.png)
 
 Streamlit还有一个用于生成静态表的方法：st.table()。
 
@@ -171,7 +178,7 @@ st.table(dataframe)
 
 *运行结果：* **完全静态的表格，不能做任何的修改**
 
-![image-20230417172747475](2-Main concepts.assets/image-20230417172747475.png)
+![image-20230417172747475](2-main-concepts.assets/write_a_data_frame_4.png)
 
 
 ### 绘制图表和地图
@@ -199,7 +206,7 @@ st.line_chart(chart_data)
 
 *运行结果：*
 
-![image-20230417173233144](2-Main concepts.assets/image-20230417173233144.png)
+![image-20230417173233144](2-main-concepts.assets/draw_a_line_chart.gif)
 
 
 ### 绘制地图
@@ -222,7 +229,7 @@ st.map(map_data)
 
 *运行结果：*
 
-![image-20230417173412599](2-Main concepts.assets/image-20230417173412599.png)
+![image-20230417173412599](2-main-concepts.assets/plot_a_map.png)
 
 
 ## 小部件
@@ -235,7 +242,7 @@ x = st.slider('x')  # 👈 this is a widget
 st.write(x, 'squared is', x * x)
 ```
 
-![运行结果](2-Main concepts.assets/Widgets.png)
+![运行结果](2-main-concepts.assets/widgets.gif)
 在第一次运行时，上面的应用程序应该输出文本“0平方是0”。然后，每当用户与小部件交互时，Streamlit只需从上到下重新运行脚本，将小部件的当前状态分配给进程中的变量。
 
 例如，如果用户将滑块移动到位置`65`,Streamlit将重新运行上面的代码并相应地将`x`设置为`65`。所以现在你应该看到文本“65的平方是4225”。
@@ -250,7 +257,7 @@ st.text_input("Your name", key="name")
 st.session_state.name
 ```
 
-![运行结果](2-Main concepts.assets/Widgets_2.png)
+![运行结果](2-main-concepts.assets/widgets_2.gif)
 每个带有键的小部件都会自动添加到Session State。有关会话状态、它与小部件状态的关联以及它的限制的更多信息，请参阅[会话状态API参考指南](https://docs.streamlit.io/library/api-reference/session-state)。
 
 
@@ -271,7 +278,7 @@ if st.checkbox('Show dataframe'):
     chart_data
 ```
 
-![运行结果](2-Main concepts.assets/checkboxes.png)
+![运行结果](2-main-concepts.assets/checkboxes.gif)
 
 
 ### 对选项使用选择框
@@ -296,7 +303,7 @@ option = st.selectbox(
 'You selected: ', option
 ```
 
-![运行结果](2-Main concepts.assets/selectbox.png)
+![运行结果](2-main-concepts.assets/selectbox.gif)
 
 
 ## 布局
@@ -321,7 +328,7 @@ add_slider = st.sidebar.slider(
 )
 ```
 
-![运行结果](2-Main concepts.assets/layout_1.png)
+![运行结果](2-main-concepts.assets/layout_1.gif)
 
 除了侧边栏，Streamlit还提供了其他几种方法来控制应用程序的布局。[st.columns](https://docs.streamlit.io/library/api-reference/layout/st.columns)可以让你并排放置小部件，[st.expander](https://docs.streamlit.io/library/api-reference/layout/st.expander)可以通过隐藏大型内容来节省空间。
 
@@ -340,7 +347,7 @@ with right_column:
     st.write(f"You are in {chosen} house!")
 ```
 
-![运行结果](2-Main concepts.assets/layout_2.png)
+![运行结果](2-main-concepts.assets/layout_2.gif)
 
 > **注意**
 > 目前侧栏或布局选项中不支持`St.echo`和`st.spinner`。不过请放心，我们目前也在为这些添加支持!
@@ -376,17 +383,17 @@ for i in range(100):
 '...and now we\'re done!'
 ```
 
-![运行结果](2-Main concepts.assets/Show_progress.png)
+![运行结果](2-main-concepts.assets/show_progress.gif)
 
 ## 主题
 
 Streamlit支持Light和Dark的主题。Streamlit将首先检查用户是否在操作系统和浏览器中设置了亮模式或暗模式。如果是，那么将使用该首选项。否则，默认应用Light主题。
 
 你也可以将活动主题由“☰”→“Settings”。
-![gif_1](2-Main concepts.assets/change_theme.gif)
+![gif_1](2-main-concepts.assets/change_theme.gif)
 
 想要在应用程序中添加自己的主题?“Settings”菜单有一个主题编辑器，点击“Edit active theme”即可访问。您可以使用此编辑器尝试不同的颜色，并实时查看应用程序更新。
-![git_2](2-Main concepts.assets/edit_theme.gif)
+![git_2](2-main-concepts.assets/edit_theme.gif)
 当你对你的工作感到满意时，可以通过在`[theme]`配置部分[设置配置选项](https://docs.streamlit.io/library/advanced-features/configuration#set-configuration-options)来保存主题。在你为你的应用程序定义了一个主题后，它将在主题选择器中显示为“自定义主题”，并将在默认情况下应用，而不是包含的Light和Dark主题。
 
 关于定义主题时可用的选项的更多信息，可以在[主题选项文档](https://docs.streamlit.io/library/advanced-features/theming)中找到。
@@ -423,7 +430,7 @@ def long_running_function(param1, param2):
 
 * `st.cache_data`是缓存返回数据的计算的推荐方法:从CSV加载DataFrame，转换NumPy数组，查询API，或任何其他返回可序列化数据对象的函数(str, int, float, DataFrame, array, list，…)它在每次函数调用时创建数据的新副本，使其免受突变和竞争条件的影响。在大多数情况下，`st.cache_data`的行为是你想要的——所以如果你不确定，从`st.cache_data`开始，看看它是否有效!
 * `st.cache_resource`是缓存全局资源(如ML模型或数据库连接)的推荐方法——您不想多次加载的不可序列化对象。使用它，你可以在应用程序的所有再次运行和会话中共享这些资源，而无需复制或冗余。注意，对缓存返回值的任何变化都会直接改变缓存中的对象(详细信息见下文)。
-  ![cache](2-Main concepts.assets/caching-high-level-diagram.png)
+  ![cache](2-main-concepts.assets/caching-high-level-diagram.png)
   *Streamlit的两个缓存装饰器及其用例。*
 
 有关Streamlit缓存装饰器、它们的配置参数及其限制的更多信息，请参见[Caching](https://docs.streamlit.io/library/advanced-features/caching)。
@@ -468,7 +475,7 @@ st.sidebar.markdown("# Page 3 🎉")
 ```
 
 现在运行`streamlit run main_page.py`，查看你闪亮的新多页应用程序!
-![多页面](2-Main concepts.assets/mpa-main-concepts.gif)
+![多页面](2-main-concepts.assets/mpa-main-concepts.gif)
 我们关于[多页应用程序](https://docs.streamlit.io/library/get-started/multipage-apps)的文档教你如何向应用程序添加页面，包括如何定义页面，结构和运行多页应用程序，以及在页面之间导航。一旦你理解了基础知识，就可以[创建你的第一个多页面应用](https://docs.streamlit.io/library/get-started/multipage-apps/create-a-multipage-app)了!
 
 
