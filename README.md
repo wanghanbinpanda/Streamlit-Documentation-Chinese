@@ -19,9 +19,9 @@ Streamlit是一个用于构建数据科学应用程序的Python框架，它允�
 
 【[创建一个多页应用程序](markdowns/5-create_a_multipage_app.md)】在本指南中，让我们把对多页应用程序的理解付诸实践，把我们熟悉的 streamlit hello 命令转换成多页应用程序。
 
-【[使用Streamlit创建以及部署界面，并部署到Hugging face的space](markdowns/5-create_a_multipage_app.md)】阿巴阿巴阿巴
+【[使用Streamlit创建以及部署界面，并部署到Hugging face的space](markdowns/6-building_and_hosting_Streamlit_apps_in_HF_spaces.md)】阿巴阿巴阿巴
 
-【[代码]()】保存了此文档中使用到的演示实例代码，您可以在学习的过程中通过运行代码亲身体验构建Web应用程序的过程！
+【[代码](python_files)】保存了此文档中使用到的演示实例代码，您可以在学习的过程中通过运行代码亲身体验构建Web应用程序的过程！
 
 ## 受众
 - 数据科学家：通过Streamlit，数据科学家可以使用Python快速构建交互式Web应用程序，无需深入了解Web开发或前端技术。
