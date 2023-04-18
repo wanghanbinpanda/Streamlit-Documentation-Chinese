@@ -12,19 +12,19 @@ Streamlit让用户可以自由地用Python以一种交互式的方式构建一�
 
 2.注册账号后，点击右上角的头像,然后点击 `New Model`即可进入我们的模型创建界面。 
 
-![image-20230418194527374](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194527374.png)
+![image-20230418194527374](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194527374.png)
 
 3.输入模型的名称、是否公开等信息，点击 `Create Model`，即可创建成功。
 
-![image-20230418194559503](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194559503.png)
+![image-20230418194559503](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194559503.png)
 
 
 
 4.最后一步，将模型文件上传，首先找到模型文件，此时文件夹是**空的**。点击 `Add file`，即可上传文件，选择你喜欢的方式上传文件即可！最后点击commit，即可上传成功，这也意味着模型托管成功！
 
-![image-20230418194742259](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194742259.png)
+![image-20230418194742259](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194742259.png)
 
-![image-20230418194838336](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194838336.png)
+![image-20230418194838336](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418194838336.png)
 
 
 
@@ -32,15 +32,15 @@ Streamlit让用户可以自由地用Python以一种交互式的方式构建一�
 
 1.首先进入到HF的主页，创建一个space。点击右上角的头像,然后点击 `New pace`即可进入我们的pace创建界面。 
 
-![image-20230418215953390](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418215953390.png)
+![image-20230418215953390](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418215953390.png)
 
 2.编辑Space的基本信息，名称等。Space SDK一定要选择Streamlit。
 
-![image-20230418220104086](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418220104086.png)
+![image-20230418220104086](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418220104086.png)
 
 3.进入创建的Space，点击右上角的`Files`，即可查看当前Space所包含的文件，未来我们的代码，图像等文件都将放在该文件夹中。
 
-![image-20230418220234084](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418220234084.png)
+![image-20230418220234084](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418220234084.png)
 
 
 
@@ -209,10 +209,10 @@ if __name__ == '__main__':
 
 5.针对于该脚本所用到的依赖，新建一个`requirements.txt`,如图所示：
 
-![image-20230418220921934](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418220921934.png)
+![image-20230418220921934](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418220921934.png)
 
 当模型加载时，会自动下载这里面的依赖，而不需要我们进行任何其他的操作。
 
 6.进行上述操作后，可以在APP看到我们的Demo啦！
 
-![image-20230418221022600](6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418221022600.png)
+![image-20230418221022600](../6-Building and hosting Streamlit apps in HF Spaces.assets/image-20230418221022600.png)
