@@ -17,7 +17,7 @@ Streamlit是一个用于构建数据科学应用程序的Python框架，它允�
 
 【[多页应用程序](notebooks/4-multipage_apps.md)】教您如何向应用添加页面，包括如何定义页面、构造和运行多页应用，以及如何在页面之间跳转。了解基础知识后，基于熟悉的 streamlit hello 命令创建您的第一个多页面应用程序！
 
-【[创建一个多页面应用程序](5-create_a_multipage_app.md)】在本指南中，让我们把对多页应用程序的理解付诸实践，把我们熟悉的 streamlit hello 命令转换成多页应用程序。
+【[创建一个多页面应用程序](notebooks/5-create_a_multipage_app.md)】在本指南中，让我们把对多页应用程序的理解付诸实践，把我们熟悉的 streamlit hello 命令转换成多页应用程序。
 
 【[代码](python_files)】保存了此文档中使用到的演示实例代码，您可以在学习的过程中通过运行代码亲身体验构建Web应用程序的过程！
 
