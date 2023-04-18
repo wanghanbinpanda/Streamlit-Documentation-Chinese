@@ -92,8 +92,7 @@ df
 ```
 
 *运行结果：*
-
-![运行结果](../2-main-concepts.assets/layout_1.gif)
+![运行结果](../2-main_concepts.assets/use_magic.png)
 
 ### 写入数据帧
 
