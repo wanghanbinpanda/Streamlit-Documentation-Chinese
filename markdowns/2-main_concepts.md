@@ -23,7 +23,7 @@ python -m streamlit run your_script.py
 streamlit run your_script.py
 ```
 
-> **Tip**
+> **提示**
 > 你也可以传递一个URL到 `streamlit run` ! 这个时候结合GitHub gist将会很棒。例如:
 >
 > ```python
@@ -38,7 +38,7 @@ streamlit run your_script.py
 
 这让您可以在一个快速的交互循环中工作：写入一些代码，保存它，实时测试它，然后写入更多的代码，保存它，测试它，等等，直到您对结果满意为止。这种编码和实时查看结果之间的紧密循环是Streamlit让你开发app更容易的方式之一。
 
-> **Tip**
+> **提示**
 > 在开发Streamlit应用程序时，建议将编辑器和浏览器窗口并排放置，这样代码和应用程序就可以同时看到。试试吧!
 
 从Streamlit 1.10.0及更高版本开始，Streamlit应用程序不能从Linux发行版的根目录运行。如果你试图从根目录运行Streamlit应用程序，Streamlit将抛出`FileNotFoundError: [Errno 2] No such file or directory`的报错。欲了解更多信息，请参阅GitHub issue [#5239](https://github.com/streamlit/streamlit/issues/5239)
@@ -65,8 +65,6 @@ Streamlit的架构允许你像编写普通的Python脚本一样编写各种应�
 ### 使用magic
 
 您也可以在不调用任何Streamlit方法的情况下写入应用程序。Streamlit支持**“魔术命令”**，这意味着您根本不必使用[st.write()](https://docs.streamlit.io/library/api-reference/write-magic/st.write)！每当Streamlit在程序代码中的一行中看到变量或文字值时，它都会使用[st.write()](https://docs.streamlit.io/library/api-reference/write-magic/st.write)**自动**将其写入您的应用程序。有关更多信息，请参阅有关[魔术命令](https://docs.streamlit.io/library/api-reference/write-magic/magic)的文档。请尝试运行以下代码片段：
-
-*代码目录：streamlit/main_concepts/1_use_magic.py*
 
 ```python
 """
@@ -98,7 +96,6 @@ df
 
 与[magic commands](https://docs.streamlit.io/library/api-reference/write-magic/magic)一样，[st.write()](https://docs.streamlit.io/library/api-reference/write-magic/st.write)是Streamlit的“瑞士军刀”。你几乎可以将任何东西传递给[st.write()](https://docs.streamlit.io/library/api-reference/write-magic/st.write):文本、数据、Matplotlib图形、Altair图表等等。这么多数据形式，Streamlit怎么区分呢？别担心，Streamlit自己会解决这个问题，并以正确的方式渲染东西。
 
-*代码目录：streamlit/main_concepts/2_write_a_data_frame.py*
 
 ```python
 import streamlit as st
@@ -127,7 +124,6 @@ st.write(pd.DataFrame({
 > **注意**
 > 本例使用Numpy生成随机示例，但您可以使用Pandas DataFrames、Numpy数组或普通的Python数组。
 
-*代码目录：streamlit/main_concepts/3_st_dataframe.py*
 
 ```python
 import streamlit as st
@@ -142,7 +138,6 @@ st.dataframe(dataframe)
 ![运行结果](../2-main_concepts.assets/write_a_data_frame_2.gif)
 让我们扩展第一个示例，使用Pandas ```Styler```对象突出显示交互表中的一些元素。
 
-*代码目录：streamlit/main_concepts/4_st_dataframe_pandas_styler.py*
 
 ```python
 import streamlit as st
@@ -162,7 +157,6 @@ st.dataframe(dataframe.style.highlight_max(axis=0))
 
 Streamlit还有一个用于生成静态表的方法：st.table()。
 
-*代码目录：streamlit/main_concepts/5_st_table.py*	
 
 ```python
 import streamlit as st
@@ -189,8 +183,6 @@ Streamlit支持一些流行的数据图表库，如[Matplotlib, Altair, deck.Gl�
 
 使用[st.line_chart()](https://docs.streamlit.io/library/api-reference/charts/st.line_chart)可以很容易地在应用程序中添加折线图。我们将使用Numpy生成一个随机样本，然后绘制图表。
 
-*代码目录：streamlit/main_concepts/6_line_chart.py*	
-
 ```python
 import streamlit as st
 import numpy as np
@@ -212,7 +204,6 @@ st.line_chart(chart_data)
 
 使用[st.map()](https://docs.streamlit.io/library/api-reference/charts/st.map)可以在地图上显示数据点。让我们使用Numpy生成一些示例数据，并将其绘制在旧金山地图上。
 
-*代码目录：streamlit/main_concepts/7_map.py*	
 
 ```python
 import streamlit as st
